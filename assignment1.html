@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var weight=50, height=4;
+        var bmi=(weight/(height*height));
+
+        var x= ((typeof(bmi)!=='number')||isNaN(bmi)===true) ? console.log("invalid input") :(bmi<18.5) ? console.log("underweight"): (bmi>=18.5 && bmi<=24.9) ? console.log("normal weight") :(bmi>=25 && bmi<=29.9) ? console.log("overweight"): console.log("obese")
+
+
+        if((typeof(bmi)!=='number')||isNaN(bmi)===true){
+            console.log("invalid input")
+        }
+        else if(bmi<18.5)
+        {
+            console.log("underweight")  
+        }
+
+        
+        else if(bmi>=18.5 && bmi<=24.9)
+        {
+            console.log("normal weight")
+        }
+        else if(bmi>=25 && bmi<=29.9){
+            console.log("overweight") 
+        }
+        else{
+            console.log("obese"); 
+        }
+    </script>
+</head>
+<body>
+  
+</body>
+</html>
